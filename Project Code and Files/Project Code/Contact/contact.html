@@ -1,0 +1,83 @@
+<!-- Contact
+Author: Sandy Vang
+Creation Date: 12/04/2023
+Description: Contact page of my website -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="./Images/text.png" alt="Sugar Time!" style="width: 220px; height:60px;" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="../Homepage/index.html">Home</a></li>
+                <li><a href="../Recipes/recipes.html">Recipes</a></li>
+                <li><a href="../About/about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <input type="text" placeholder="Search..">
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1> Contact Me!</h1>
+
+        <form class="form">
+            <p>
+                <label for="name" class="label"> First and Last Name (Required)</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label for="email" class="label"> Email Address (Required)</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p>
+                <label for="message" class="label">Your Message </label>
+                <textarea name="message" cols="60" rows="4" id="message"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+
+        <div class="footer">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>+000 000 0000 <br> 123 XYZ Road, Stevens Point, WI</p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Recipes</a>
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe</h3>
+                <p>Join our newsletter!</p>
+                <form>
+                    <input name="email" placeholder="Email Address" required>
+                    <br>
+                    <button class="submit"> Subscribe now!</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

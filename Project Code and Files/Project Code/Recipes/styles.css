@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'Sacramento';
+  src: url(./Fonts/Sacramento/Sacramento-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BadScript';
+  src: url(./Fonts/Bad_Script/BadScript-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  position: absolute;
+  height: auto;
+  left: auto;
+}
+
+nav {
+  width: 100%;
+  overflow: auto;
+  background-color: #F0E6EF;
+  font-family: 'Sacramento';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 2px;
+  margin: 0 0 0 25px;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  width: 100px;
+  display: block;
+  padding: 21px 15px;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: white;
+  color: black;
+}
+
+li a:active {
+  background-color: #9C89B8;
+  color: white;
+}
+
+nav input[type=text] {
+  float: right;
+  padding: 7px;
+  margin-top: -55px;
+  margin-right: 9px;
+  font-family: 'BadScript';
+  font-size: 12px;
+  border: none;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.filter {
+  -ms-flex: 20%; 
+  flex: 20%;
+  background-color: white;
+  padding: 20px;
+}
+
+.filter h2 {
+  font-family: 'Sacramento';
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.filter input[type=text] {
+  border: solid;
+  border-color: #9C89B8;
+  font-family: 'BadScript';
+  font-size: 12px;
+  float: left;
+  padding: 7px;
+  margin-right: 9px;
+  width: 240px;
+}
+
+.main {
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-top: 50px;
+  margin-left: 5px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #9C89B8;
+  margin: 10px;
+}
+
+.container {
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container h2 {
+  font-family: 'Sacramento';
+  text-align: center;
+}
+
+.container p {
+  font-family: 'BadScript';
+}
+
+.container::after, .row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  background-color: #9C89B8;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-family: 'Sacramento';
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #F0E6EF;
+}
+
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+  font-family: 'BadScript';
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 5px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #F0E6EF;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  background-color: #9C89B8;
+  color: white;
+}
+
+.footer div {
+  text-align: left;
+  margin-left: 70px;
+}
+
+.footer div h3 {
+  font-family: 'Sacramento';
+  font-weight: normal;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.footer div p {
+  font-family: 'BadScript';
+  font-size: 15px;
+}
+
+.contact {
+  flex-grow: 1;
+}
+
+.quick-links {
+  flex-grow: 1;
+}
+
+.quick-links a {
+  display: block;
+  font-family: 'BadScript';
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.subscribe {
+  flex-grow: 1;
+}
+
+form input {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+}
+
+.submit {
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
